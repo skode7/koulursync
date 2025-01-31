@@ -19,7 +19,7 @@
  * You should have received a copy of the GNU General Public License along
  * with this program; if not, visit the http://fsf.org website.
  */
-
+#include "stdio.h"
 #include "rsync.h"
 #include "inums.h"
 #include "ifuncs.h"
@@ -1710,7 +1710,7 @@ static void unset_env_var(const char *var)
 int main(int argc,char *argv[])
 {
 	int ret;
-
+	printf("I was here!\n")
 	raw_argc = argc;
 	raw_argv = argv;
 
